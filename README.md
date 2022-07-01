@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-until-each-right
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@esm/index.mjs';
+var untilEachRight = require( '@stdlib/utils-until-each-right' );
 ```
 
 #### untilEachRight( collection, predicate, fcn\[, thisArg ] )
@@ -196,16 +212,11 @@ var mean = context.sum / context.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-var isEven = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-even' ).isPrimitive;
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
-import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@esm/index.mjs';
+```javascript
+var isEven = require( '@stdlib/assert-is-even' ).isPrimitive;
+var randu = require( '@stdlib/random-base-randu' );
+var floor = require( '@stdlib/math-base-special-floor' );
+var untilEachRight = require( '@stdlib/utils-until-each-right' );
 
 var arr;
 var i;
@@ -237,10 +248,6 @@ for ( i = arr.length-1; i >= 0; i-- ) {
 
 i = 0;
 untilEachRight( arr, predicate, log );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -279,7 +286,7 @@ untilEachRight( arr, predicate, log );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -335,6 +342,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-until-each-right/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-until-each-right/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-until-each-right/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-until-each-right/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-until-each-right/main/LICENSE
 
@@ -346,9 +354,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/until-each]: https://github.com/stdlib-js/utils-until-each/tree/esm
+[@stdlib/utils/until-each]: https://github.com/stdlib-js/utils-until-each
 
-[@stdlib/utils/while-each-right]: https://github.com/stdlib-js/utils-while-each-right/tree/esm
+[@stdlib/utils/while-each-right]: https://github.com/stdlib-js/utils-while-each-right
 
 <!-- </related-links> -->
 
