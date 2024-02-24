@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-until-each-right/tags). For example,
+
+```javascript
 import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@v0.2.1-deno/mod.js';
 ```
 
@@ -211,7 +216,7 @@ var mean = context.sum / context.count;
 var isEven = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-even' ).isPrimitive;
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
-import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@v0.2.1-deno/mod.js';
+import untilEachRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-until-each-right@deno/mod.js';
 
 var arr;
 var i;
