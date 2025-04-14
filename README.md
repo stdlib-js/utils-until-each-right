@@ -98,9 +98,9 @@ untilEachRight( arr, predicate, log );
 
 Both the `predicate` function and the `function` to apply are provided three arguments:
 
--   `value`: collection element
--   `index`: collection index
--   `collection`: input collection
+-   `value`: collection element.
+-   `index`: collection index.
+-   `collection`: input collection.
 
 Basic support for dynamic collections is provided. Note, however, that index incrementation is **not** guaranteed to be monotonically **decreasing**.
 
@@ -316,7 +316,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
